@@ -1,0 +1,112 @@
+@import url('http://fonts.googleapis.com/css?family=Bad+Script');
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+    flex-direction: column;
+}
+
+h1 {
+    color: #111;
+    font-size: 9em;
+    font-family: 'Bad Script', cursive;
+}
+
+h1 span {
+    display: table-cell;
+    margin: 0;
+    padding: 0;
+    animation: animate 3s linear infinite;
+}
+
+h1 span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+h1 span:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+h1 span:nth-child(3) {
+    animation-delay: 0.75s;
+}
+
+h1 span:nth-child(4) {
+    animation-delay: 15s;
+}
+
+h1 span:nth-child(5) {
+    animation-delay: 1.5s;
+}
+
+h1 span:nth-child(6) {
+    animation-delay: 1.75s;
+}
+
+h1 span:nth-child(7) {
+    animation-delay: 2s;
+}
+
+h1 span:nth-child(8) {
+    animation-delay: 2.5s;
+}
+
+h1 span:nth-child(9) {
+    animation-delay: 2.75s;
+}
+
+h1 span:nth-child(10) {
+    animation-delay: 3s;
+}
+
+h1 span:nth-child(11) {
+    animation-delay: 3.5s;
+}
+
+h1 span:nth-child(12) {
+    animation-delay: 3.75s;
+}
+
+@keyframes animate {
+    0%,
+    100% {
+        color: #fff;
+        filter: blur(1px);
+        text-shadow: 0 0 10px #00b3ff, 0 0 20px #00b3ff, 0 0 40px #00b3ff, 0 0 80px #00b3ff, 0 0 120px #00b3ff, 0 0 200px #00b3ff, 0 0 300px #00b3ff, 0 0 400px #00b3ff, 0 0 480px #00b3ff, 0 0 520px #00b3ff, 0 0 600px #00b3ff, 0 0 700px #00b3ff;
+    }
+    5%,
+    95% {
+        color: #111;
+        filter: blur(0px);
+        text-shadow: none;
+    }
+}
+
+button {
+    padding: 10px 3em;
+    font-size: 2em;
+    font-family: sans-serif;
+    font-family: 'Courier New';
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 1px #0707078f;
+    cursor: pointer;
+    transition: all 0.5s;
+    margin-bottom: 1em;
+    background-image: linear-gradient(to right, #314755 0%, #26a0da 51%, #314755 100%)
+}
+
+button:focus {
+    outline: none;
+}
+
+button-ga:hover {
+    background-position: right center;
+}
+
+button:active {
+    box-shadow: none;
+    color: #b86e74;
+}
